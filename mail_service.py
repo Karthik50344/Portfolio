@@ -43,7 +43,7 @@ def send_email():
         msg["To"] = EMAIL_ADDRESS
         msg.set_content(f"Name: {name}\nEmail: {sender_email}\n\nMessage:\n{message_body}")
 
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as smtp:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
         return jsonify({"success": True}), 200
