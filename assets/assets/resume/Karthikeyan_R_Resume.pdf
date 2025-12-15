@@ -1,0 +1,96 @@
+<table>
+<thead>
+	<tr>
+		<th>x</th>
+		<th>y</th>
+		<th>name</th>
+		<th>label</th>
+		<th>barColumn</th>
+		<th>barValue</th>
+		<th>stackedBarColumn</th>
+		<th>stackedBarValue</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td>28</td>
+		<td>All</td>
+		<td>All</td>
+		<td>AssetStatusID</td>
+		<td>0</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>2</td>
+		<td>Checked Out</td>
+		<td>Checked Out</td>
+		<td>AssetStatusID</td>
+		<td>3</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>1</td>
+		<td>Discard Approved</td>
+		<td>Discard Approved</td>
+		<td>AssetStatusID</td>
+		<td>6</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>1</td>
+		<td>Discard Rejected</td>
+		<td>Discard Rejected</td>
+		<td>AssetStatusID</td>
+		<td>7</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>1</td>
+		<td>Discard Requested</td>
+		<td>Discard Requested</td>
+		<td>AssetStatusID</td>
+		<td>0</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>6</td>
+		<td>In Use</td>
+		<td>In Use</td>
+		<td>AssetStatusID</td>
+		<td>1</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>16</td>
+		<td>Not In Use</td>
+		<td>Not In Use</td>
+		<td>AssetStatusID</td>
+		<td>2</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>1</td>
+		<td>To Be Installed</td>
+		<td>To Be Installed</td>
+		<td>AssetStatusID</td>
+		<td>0</td>
+		<td></td>
+		<td>0</td>
+	</tr>
+</tbody>
+</table>
