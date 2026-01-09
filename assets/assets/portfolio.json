@@ -12,18 +12,12 @@
     "Dart",
     "Firebase",
     "REST API",
-    "State Management (Bloc, Provider, Riverpod)",
+    "State Management (Bloc)",
     "Git",
     "UI/UX Design",
-    "SQLite",
-    "Node.js",
-    "MongoDB",
-    "React Native",
     "Java",
-    "Kotlin",
     "iOS Development",
     "Android Development",
-    "CI/CD",
     "Agile/Scrum"
   ],
   "experience": [
@@ -62,5 +56,7 @@
     "degree": "Bachelor of Computer Science",
     "institution": "University of Technology",
     "year": "2019"
-  }
+  },
+  "communication languages": ["Tamil(Native)", "English(Speak, Write)", "Japanese(Learning...)"],
+  "programming languages": ["Dart", "Python"]
 }
