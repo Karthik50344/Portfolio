@@ -38,18 +38,52 @@
   "projects": [
     {
       "name": "E-Commerce App",
-      "description": "Full-featured e-commerce application with payment integration, product catalog, and user authentication",
-      "technologies": ["Flutter", "Firebase", "Stripe", "Provider"]
+      "description": "Full-featured e-commerce application with payment integration, product catalog, user authentication and push notification",
+      "technologies": ["Flutter", "Firebase", "Dart", "Bloc"]
     },
     {
-      "name": "Fitness Tracker",
-      "description": "Health and fitness tracking app with workout plans, calorie counter, and progress analytics",
-      "technologies": ["Flutter", "SQLite", "Charts", "Camera"]
+      "name": "LIMS & CRM App",
+      "description": "An enterprise-grade, dynamic LIMS & CRM mobile application built as a single configurable platform for multiple clients, supporting different environments via URL configuration, with integrated AI capabilities, push notification and advanced analytics dashboards.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Bloc"]
+    }
+  ],
+  "personal projects": [
+    {
+      "name": "Shiki (Reminder App)",
+      "description": "A lightweight reminder application designed for custom reminders and mobile recharges, utilizing local storage for offline data management and push notifications for real-time alerts.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Bloc"],
+      "images": [
+        "Shiki(1).jpg",
+        "Shiki(2).jpg",
+        "Shiki(3).jpg",
+        "Shiki(4).jpg",
+        "Shiki(5).jpg",
+        "Shiki(6).jpg",
+        "Shiki(7).jpg"
+      ]
     },
     {
-      "name": "Social Media Dashboard",
-      "description": "Analytics dashboard for social media managers with real-time data visualization",
-      "technologies": ["Flutter", "REST API", "GraphQL", "Riverpod"]
+      "name": "Basutei (Bus live location tracking App for schools and colleges)",
+      "description": "A real-time school and college bus tracking system using Firebase Realtime Database, enabling drivers to share live location, parents and students to track buses in real time, and admins to manage buses, drivers, and students through role-based authentication and push notifications.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Bloc"],
+      "images": []
+    },
+    {
+      "name": "NihonGO (Japanese Learning App)",
+      "description": "A Japanese language learning app with Google and email authentication, designed to help users master Hiragana and Katakana through guided lessons, daily streak tracking, and hands-on writing practice for each character.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Bloc"],
+      "images": [
+        "NihonGo(1).jpg",
+        "NihonGo(2).jpg",
+        "NihonGo(3).jpg",
+        "NihonGo(4).jpg",
+        "NihonGo(5).jpg",
+        "NihonGo(6).jpg",
+        "NihonGo(7).jpg",
+        "NihonGo(8).jpg",
+        "NihonGo(9).jpg",
+        "NihonGo(10).jpg"
+      ]
     }
   ],
   "education": {
@@ -57,6 +91,64 @@
     "institution": "University of Technology",
     "year": "2019"
   },
-  "communication languages": ["Tamil(Native)", "English(Speak, Write)", "Japanese(Learning...)"],
-  "programming languages": ["Dart", "Python"]
+  "communication languages": [
+    {
+      "name": "Tamil",
+      "level": "Native",
+      "description": [
+        "Mother tongue",
+        "fully fluent"
+      ]
+    },
+    {
+      "name": "English",
+      "level": "Speak, Write",
+      "description": [
+        "Professional proficiency",
+        "Used for work and documentation"
+      ]
+    },
+    {
+      "name": "Japanese",
+      "level": "Learning",
+      "description": [
+        "Currently studying",
+        "Elementary level"
+      ]
+    }
+  ],
+  "programming languages": {
+    "known": [
+      {
+        "name": "Dart",
+        "description": [
+          "Primary language for Flutter development",
+          "2 years experience",
+          "Used in all Flutter projects\n"
+        ]
+      },
+      {
+        "name": "Python",
+        "description": [
+          "Backend development and scripting",
+          "Data processing and automation",
+          "API development\n"
+        ]
+      }
+    ],
+    "worked": [
+      {
+        "name": "Java",
+        "description": ["Android native development\n"]
+      },
+      {
+        "name": "JavaScript",
+        "description": ["Web development\n"]
+      },
+      {
+        "name": "SQL",
+        "description": ["Database queries\n"]
+      }
+    ]
+  }
 }
