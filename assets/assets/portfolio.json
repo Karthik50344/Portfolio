@@ -151,5 +151,30 @@
         "description": ["Database queries\n"]
       }
     ]
-  }
+  },
+  "blog": [
+    {
+      "title": "Widget of the day",
+      "data": [
+        {
+          "name": "Day 1 - Container",
+          "description": "Container\nThe Container widget is one of the most commonly used and powerful widgets in Flutter. It acts as a box model that helps in designing layouts by combining multiple properties into a single widget.\n\n\uD83D\uDD39 What can Container do?\n\nAdd padding & margin\n\nSet width & height\n\nApply background color or gradient\n\nAdd borders & rounded corners\n\nApply box shadow\n\nAlign child widgets\n\n\uD83D\uDD39 Why Container is important?\nInstead of nesting multiple widgets like Padding, Align, DecoratedBox, etc., Container simplifies UI design by handling them in one place.\uD83D\uDD39 Real-world use cases:\n✅ Cards\n✅ Buttons\n✅ Layout blocks\n✅ Profile avatars\n✅ Custom UI components\n\n\uD83D\uDCA1 Mastering Container helps you understand Flutter layout fundamentals.",
+          "code": "Container(\n  width: 150,\n  height: 150,\n  padding: EdgeInsets.all(16),\n  decoration: BoxDecoration(\n    color: Colors.blue,\n    borderRadius: BorderRadius.circular(12),\n    boxShadow: [\n      BoxShadow(\n        color: Colors.black26,\n        blurRadius: 6,\n        offset: Offset(2, 2),\n      ),\n    ],\n  ),\n  child: Center(\n    child: Text(\n      'Container',\n      style: TextStyle(color: Colors.white),\n    ),\n  ),\n);",
+          "image": "Day 1 - Container.png"
+        },
+        {
+          "name": "Day 2 - Row",
+          "description": "",
+          "code": "",
+          "image": "Day 2 - Row.png"
+        },
+        {
+          "name": "Day 3 - Column",
+          "description": "",
+          "code": "",
+          "image": "Day 3 - Column.png"
+        }
+      ]
+    }
+  ]
 }
