@@ -64,8 +64,8 @@
       ]
     },
     {
-      "name": "Basutei (Bus live location tracking App for schools and colleges)",
-      "description": "A real-time school and college bus tracking system using Firebase Realtime Database, enabling drivers to share live location, parents and students to track buses in real time, and admins to manage buses, drivers, and students through role-based authentication and push notifications.",
+      "name": "Basutei (Bus live location tracking App)",
+      "description": "A real-time bus tracking system using Firebase Realtime Database, enabling drivers to share live location, users to track buses in real time, and admins to manage buses, drivers, and users through role-based authentication and push notifications.",
       "technologies": ["Flutter", "Firebase", "Dart", "Bloc"],
       "images": []
     },
