@@ -87,11 +87,14 @@
       ]
     }
   ],
-  "education": {
-    "degree": "Bachelor of Computer Science",
-    "institution": "University of Technology",
-    "year": "2019"
-  },
+  "education": [
+    {
+      "degree": "Bachelor of Engineering(CSE)",
+      "institution": "Einstein College of Engineering, Tirunelveli",
+      "university": "Anna University, Chennai",
+      "year": "2020 - 2024"
+    }
+  ],
   "communication languages": [
     {
       "name": "Tamil",
@@ -164,15 +167,57 @@
         },
         {
           "name": "Day 2 - Row",
-          "description": "",
-          "code": "",
+          "description": "Row\nThe Row widget is used to arrange its child widgets horizontally in Flutter. It is one of the core layout widgets and forms the foundation of responsive UI design.\n\n\uD83D\uDD39 What does Row do?\n\nLays out widgets from left to right\n\nControls spacing and alignment of children\n\nHelps build toolbars, menus, buttons, and forms\n\n\uD83D\uDD39 Key properties:\n\nchildren – widgets inside the Row\n\nmainAxisAlignment – horizontal alignment\n\ncrossAxisAlignment – vertical alignment\n\nmainAxisSize – how much horizontal space Row occupies\uD83D\uDD39 Real-world use cases:\n✅ App bars\n✅ Icon + text layouts\n✅ Action buttons\n✅ Horizontal lists\n\n\uD83D\uDCA1 Mastering Row helps you fully understand Flutter’s layout system.",
+          "code": "Row(\n  mainAxisAlignment: MainAxisAlignment.spaceBetween,\n  crossAxisAlignment: CrossAxisAlignment.center,\n  children: [\n    Icon(Icons.star),\n    Text('Row Widget'),\n    Icon(Icons.favorite),\n  ],\n);",
           "image": "Day 2 - Row.png"
         },
         {
           "name": "Day 3 - Column",
-          "description": "",
-          "code": "",
+          "description": "Column\nThe Column widget is used to arrange its child widgets vertically in Flutter. It is a fundamental layout widget that helps structure screens from top to bottom.\n\n\uD83D\uDD39 What does Column do?\n\nLays out widgets vertically\n\nControls spacing and alignment of children\n\nHelps build forms, lists, sections, and stacked UI elements\n\n\uD83D\uDD39 Key properties:\n\nchildren – widgets inside the Column\n\nmainAxisAlignment – vertical alignment\n\ncrossAxisAlignment – horizontal alignment\n\nmainAxisSize – how much vertical space the Column occupies\uD83D\uDD39 Real-world use cases:\n✅ Forms\n✅ Profile sections\n✅ Settings screens\n✅ Vertical menus\n\n\uD83D\uDCA1 Understanding Column along with Row gives you full control over Flutter layouts.",
+          "code": "Column(\n  mainAxisAlignment: MainAxisAlignment.center,\n  crossAxisAlignment: CrossAxisAlignment.start,\n  children: [\n    Text('Title'),\n    SizedBox(height: 8),\n    Text('Subtitle'),\n    ElevatedButton(onPressed: () {}, child: Text('Action')),\n  ],\n);",
           "image": "Day 3 - Column.png"
+        },
+        {
+          "name": "Day 4 - Stack",
+          "description": "Stack\nThe Stack widget allows you to overlay widgets on top of each other, making it perfect for layered UI designs and custom layouts.\n\n\uD83D\uDD39 What does Stack do?\n\nPlaces widgets on top of one another\n\nSupports absolute positioning using Positioned\n\nEnables complex UI designs with depth and layering\n\n\uD83D\uDD39 Key properties:\n\nchildren – widgets inside the Stack\n\nalignment – default alignment of children\n\nfit – how non-positioned children are sized\n\nclipBehavior – controls overflow clipping\uD83D\uDD39 Real-world use cases:\n✅ Profile images with badges\n✅ Floating buttons\n✅ Image overlays\n✅ Custom cards and banners\n\n\uD83D\uDCA1 Stack gives you creative freedom to build visually rich and layered UIs.",
+          "code": "Stack(\n  alignment: Alignment.center,\n  children: [\n    Container(width: 120, height: 120, color: Colors.blue),\n    Positioned(\n      bottom: 8,\n      right: 8,\n      child: Icon(Icons.star, color: Colors.white),\n    ),\n  ],\n);",
+          "image": "Day 4 - Stack.png"
+        },
+        {
+          "name": "Day 5 - Text",
+          "description": "Text\nThe Text widget is used to display strings of text in Flutter. It is one of the most basic yet essential widgets for building readable and user-friendly UIs.\n\n\uD83D\uDD39 What does Text do?\n\nDisplays single or multiple lines of text\n\nSupports rich styling and alignment\n\nHandles overflow, wrapping, and scaling\n\n\uD83D\uDD39 Key properties:\n\nstyle – font size, weight, color, font family\n\ntextAlign – alignment of text\n\nmaxLines – limits number of lines\n\noverflow – handles text overflow\n\nsoftWrap – wraps text to next line\uD83D\uDD39 Real-world use cases:\n✅ Titles & headings\n✅ Labels & descriptions\n✅ Buttons & menus\n✅ Error and status messages\n\n\uD83D\uDCA1 Mastering the Text widget helps you build clean, accessible, and polished UIs.",
+          "code": "Text(\n  'Flutter Text Widget',\n  style: TextStyle(\n    fontSize: 18,\n    fontWeight: FontWeight.bold,\n    color: Colors.blue,\n  ),\n  textAlign: TextAlign.center,\n  maxLines: 2,\n  overflow: TextOverflow.ellipsis,\n);",
+          "image": "Day 5 - Text.png"
+        },
+        {
+          "name": "Day 6 - Image",
+          "description": "Image\nThe Image widget is used to display images in Flutter applications. It supports multiple image sources and provides full control over sizing, fitting, and alignment.\n\n\uD83D\uDD39 What does Image do?\n\nDisplays images from assets, network, files, or memory\n\nControls how images fit within their bounds\n\nSupports placeholders and error handling\n\n\uD83D\uDD39 Key properties:\n\nimage / Image.asset, Image.network\n\nfit – controls how the image fits (cover, contain, fill, etc.)\n\nwidth & height – size of the image\n\nalignment – image alignment within its bounds\n\ncolor & colorBlendMode – apply color effects\uD83D\uDD39 Real-world use cases:\n✅ Profile pictures\n✅ Banners & thumbnails\n✅ Product images\n✅ Background visuals\n\n\uD83D\uDCA1 Mastering the Image widget helps you build visually rich and engaging Flutter UIs.",
+          "code": "Image.network(\n  'https://example.com/image.png',\n  width: 120,\n  height: 120,\n  fit: BoxFit.cover,\n);",
+          "image": "Day 6 - Image.png"
+        },
+        {
+          "name": "Day 7 - ListView",
+          "description": "ListView\nThe ListView widget is used to display a scrollable list of widgets in Flutter. It is essential for building dynamic and data-driven UIs that handle large amounts of content efficiently.\n\n\uD83D\uDD39 What does ListView do?\n\nDisplays items in a scrollable vertical or horizontal list\n\nLazily loads widgets for better performance\n\nSupports separators, builders, and custom layouts\n\n\uD83D\uDD39 Common constructors:\n\nListView() – static list\n\nListView.builder() – dynamic, lazy-loaded list\n\nListView.separated() – list with separators\n\nListView.custom() – fully customized behavior\uD83D\uDD39 Key properties:\n\nscrollDirection – vertical or horizontal\n\nphysics – scroll behavior\n\nshrinkWrap – size based on content\n\npadding – space around list items\n\n\uD83D\uDD39 Real-world use cases:\n✅ Chat screens\n✅ Feeds & timelines\n✅ Settings pages\n✅ Product lists\n\n\uD83D\uDCA1 ListView is the backbone of most Flutter apps that display scrolling content.",
+          "code": "ListView.builder(\n  itemCount: items.length,\n  itemBuilder: (context, index) {\n    return ListTile(\n      title: Text(items[index]),\n    );\n  },\n);",
+          "image": "Day 7 - ListView.png"
+        },
+        {
+          "name": "Day 8 - GridView",
+          "description": "GridView\nThe GridView widget is used to display items in a two-dimensional scrollable grid. It’s ideal when you want to show content in rows and columns instead of a single list.\n\n\uD83D\uDD39 What does GridView do?\n\nDisplays widgets in a grid layout\n\nSupports vertical and horizontal scrolling\n\nEfficiently handles large datasets\n\n\uD83D\uDD39 Common constructors:\n\nGridView.count() – fixed number of columns\n\nGridView.extent() – max item width\n\nGridView.builder() – dynamic, lazy-loaded grid\n\nGridView.custom() – fully customized grid\uD83D\uDD39 Key properties:\n\ncrossAxisCount – number of columns\n\nmainAxisSpacing – vertical spacing\n\ncrossAxisSpacing – horizontal spacing\n\nchildAspectRatio – width vs height ratio\n\n\uD83D\uDD39 Real-world use cases:\n✅ Image galleries\n✅ Product listings\n✅ Dashboards\n✅ Category grids\n\n\uD83D\uDCA1 Use GridView when content looks better in blocks rather than a vertical list.",
+          "code": "GridView.count(\n  crossAxisCount: 2,\n  children: List.generate(6, (index) {\n    return Card(\n      child: Center(child: Text('Item $index')),\n    );\n  }),\n);",
+          "image": "Day 8 - GridView.png"
+        },
+        {
+          "name": "Day 9 - Expanded",
+          "description": "Expanded\nThe Expanded widget is used to make a child of a Row, Column, or Flex expand and fill the available space. It helps create responsive layouts without hard-coding sizes.\n\n\uD83D\uDD39 What does Expanded do?\n\nTakes up available free space\n\nWorks only inside Flex widgets (Row, Column, Flex)\n\nAutomatically adjusts layout based on screen size\n\n\uD83D\uDD39 Key properties:\n\nchild – widget to expand\n\nflex – controls how much space to take compared to siblings\uD83D\uDD39 Real-world use cases:\n✅ Responsive rows & columns\n✅ Equal-width buttons\n✅ Flexible cards\n✅ Adaptive layouts\n\n\uD83D\uDCA1 Expanded is essential for building flexible and responsive Flutter UIs.",
+          "code": "Row(\n  children: [\n    Expanded(\n      flex: 2,\n      child: Container(color: Colors.blue),\n    ),\n    Expanded(\n      flex: 1,\n      child: Container(color: Colors.red),\n    ),\n  ],\n);",
+          "image": "Day 9 - Expanded.png"
+        },
+        {
+          "name": "Day 10 - Padding",
+          "description": "Padding\nThe Padding widget is used to add space around a widget by insetting its child. It helps improve UI readability and spacing without affecting the widget’s size directly.\n\n\uD83D\uDD39 What does Padding do?\n\nAdds empty space inside the parent layout\n\nImproves UI spacing and visual clarity\n\nMakes layouts more readable and user-friendly\n\n\uD83D\uDD39 Key properties:\n\npadding – defines space using EdgeInsets\n\nEdgeInsets.all()\n\nEdgeInsets.symmetric()\n\nEdgeInsets.only()\uD83D\uDD39 Real-world use cases:\n✅ Text spacing\n✅ Buttons & cards\n✅ Form fields\n✅ Clean UI layouts\n\n\uD83D\uDCA1 Good spacing is key to great UI, and Padding makes it effortless.",
+          "code": "Padding(\n  padding: EdgeInsets.all(16),\n  child: Text('Flutter Padding Widget'),\n);",
+          "image": "Day 10 - Padding.png"
         }
       ]
     }
