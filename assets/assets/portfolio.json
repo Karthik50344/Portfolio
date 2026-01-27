@@ -218,6 +218,42 @@
           "description": "Padding\nThe Padding widget is used to add space around a widget by insetting its child. It helps improve UI readability and spacing without affecting the widget’s size directly.\n\n\uD83D\uDD39 What does Padding do?\n\nAdds empty space inside the parent layout\n\nImproves UI spacing and visual clarity\n\nMakes layouts more readable and user-friendly\n\n\uD83D\uDD39 Key properties:\n\npadding – defines space using EdgeInsets\n\nEdgeInsets.all()\n\nEdgeInsets.symmetric()\n\nEdgeInsets.only()\uD83D\uDD39 Real-world use cases:\n✅ Text spacing\n✅ Buttons & cards\n✅ Form fields\n✅ Clean UI layouts\n\n\uD83D\uDCA1 Good spacing is key to great UI, and Padding makes it effortless.",
           "code": "Padding(\n  padding: EdgeInsets.all(16),\n  child: Text('Flutter Padding Widget'),\n);",
           "image": "Day 10 - Padding.png"
+        },
+        {
+          "name": "Day 11 - Align",
+          "description": "Align\n\nThe Align widget is used to position a child widget within its parent using alignment values. It gives precise control over where a widget appears inside available space.\n\n\uD83D\uDD39 What does Align do?\n\nPositions a widget within its parent\n\nUses alignment values from -1.0 to 1.0\n\nWorks well for fine-grained UI positioning\n\n\uD83D\uDD39 Key properties:\n\nalignment – position of the child\n\nchild – widget to align\n\nwidthFactor & heightFactor – size relative to child\uD83D\uDD39 Common alignments:\n\nAlignment.center\n\nAlignment.topLeft\n\nAlignment.bottomRight\n\n\uD83D\uDD39 Real-world use cases:\n✅ Floating icons\n✅ Badges on images\n✅ Custom layouts\n✅ Overlay elements\n\n\uD83D\uDCA1 Align is perfect when you need exact positioning without complex layouts.",
+          "code": "Align(\n  alignment: Alignment.bottomRight,\n  child: Icon(Icons.star, size: 40),\n);",
+          "image": "Day 11 - Align.png"
+        },
+        {
+          "name": "Day 12 - SizedBox",
+          "description": "SizedBox\n\nThe SizedBox widget is used to add fixed spacing or define a specific width and height for a widget. It helps create clean and consistent layouts without extra complexity.\n\n\uD83D\uDD39 What does SizedBox do?\n\n• Adds vertical or horizontal space between widgets\n• Sets fixed width and/or height\n• Improves layout readability\n\n\uD83D\uDD39 Key properties:\n\n• width – sets horizontal size\n• height – sets vertical size\n• child – widget inside the SizedBox\uD83D\uDD39 Common use cases:\n✅ Spacing between widgets\n✅ Fixed-size buttons or cards\n✅ Cleaner layouts\n✅ Replacing unnecessary padding\n\n\uD83D\uDCA1 SizedBox is a lightweight and effective way to control spacing and sizing in Flutter layouts.",
+          "code": "SizedBox(height: 16)\n\nSizedBox(\n  width: 100,\n  height: 100,\n  child: Container(color: Colors.blue),\n)",
+          "image": "Day 12 - SizedBox.png"
+        },
+        {
+          "name": "Day 13 - ElevatedButton",
+          "description": "ElevatedButton\n\nThe ElevatedButton widget is a material design button used to trigger actions in a Flutter app. It comes with elevation, background color, and built-in press animations.\n\n\uD83D\uDD39 What does ElevatedButton do?\n\n• Creates a clickable button with elevation\n• Handles user interactions like taps\n• Follows Material Design guidelines\n\n\uD83D\uDD39 Key properties:\n\n• onPressed – callback when button is tapped\n• child – widget inside the button\n• style – customize color, shape, padding, elevation\uD83D\uDD39 Common customizations:\n\n• Background color\n• Rounded corners\n• Padding & elevation\n• Disabled state\n\n\uD83D\uDD39 Real-world use cases:\n✅ Form submission\n✅ Login / Signup buttons\n✅ Call-to-action buttons\n✅ Navigation triggers\n\n\uD83D\uDCA1 ElevatedButton is the go-to widget for primary actions in Flutter apps.",
+          "code": "ElevatedButton(\n  onPressed: () {\n    print('Button pressed');\n  },\n  child: Text('Click Me'),\n);",
+          "image": "Day 13 - ElevatedButton.png"
+        },
+        {
+          "name": "Day 14 - IconButton",
+          "description": "IconButton\n\nThe IconButton widget is a tappable icon used to trigger actions in a Flutter app. It’s commonly used for toolbar actions, navigation controls, and quick interactions.\n\n\uD83D\uDD39 What does IconButton do?\n\n• Creates a clickable icon\n• Handles user interactions\n• Provides visual feedback on tap\n• Saves space compared to regular buttons\n\n\uD83D\uDD39 Key properties:\n\n• onPressed – callback when tapped\n• icon – the icon widget\n• tooltip – accessibility hint\n• color – icon color\n• iconSize – size of the icon\uD83D\uDD39 Common use cases:\n✅ AppBar actions\n✅ Navigation buttons\n✅ Like/Favorite buttons\n✅ Settings icons\n✅ Toolbars\n\n\uD83D\uDCA1 IconButton is perfect for compact actions where space and clarity matter.",
+          "code": "IconButton(\n  icon: Icon(Icons.favorite),\n  onPressed: () {\n    print('Icon clicked');\n  },\n);",
+          "image": "Day 14 - IconButton.png"
+        },
+        {
+          "name": "Day 15 - FloatingActionButton",
+          "description": "FloatingActionButton\n\nThe FloatingActionButton (FAB) is a circular button used to trigger a primary or most important action in a Flutter screen. It usually floats above the UI and grabs user attention.\n\n\uD83D\uDD39 What does FloatingActionButton do?\n\n• Highlights the primary action of a screen\n• Floats above content for easy access\n• Follows Material Design guidelines\n\n\uD83D\uDD39 Key properties:\n\n• onPressed – callback when tapped\n• child – icon or widget inside the button\n• backgroundColor – button color\n• elevation – shadow depth\n• tooltip – accessibility hint\uD83D\uDD39 Common use cases:\n✅ Add new item\n✅ Create post\n✅ Compose message\n✅ Primary screen action\n\n\uD83D\uDCA1 FloatingActionButton is best used for one clear and important action per screen.",
+          "code": "FloatingActionButton(\n  onPressed: () {\n    print('FAB pressed');\n  },\n  child: Icon(Icons.add),\n);",
+          "image": "Day 15 - FloatingActionButton.png"
+        },
+        {
+          "name": "Day 16 - TextField",
+          "description": "TextField\n\nThe TextField widget is used to take user input such as text, numbers, passwords, or emails. It’s one of the most essential widgets for forms and interactive apps.\n\n\uD83D\uDD39 What does TextField do?\n\n• Allows users to enter text\n• Supports validation and formatting\n• Highly customizable UI and behavior\n\n\uD83D\uDD39 Key properties:\n\n• controller – read/write input value\n• decoration – label, hint, border, icons\n• keyboardType – text, number, email, etc.\n• obscureText – hide input (passwords)\uD83D\uDD39 Common use cases:\n✅ Login & signup forms\n✅ Search bars\n✅ Feedback & comments\n✅ Profile editing\n\n\uD83D\uDCA1 TextField is the foundation of user interaction in Flutter apps.",
+          "code": "TextField(\n  decoration: InputDecoration(\n    labelText: \"Username\",\n    border: OutlineInputBorder(),\n  ),\n);",
+          "image": "Day 16 - TextField.png"
         }
       ]
     }
