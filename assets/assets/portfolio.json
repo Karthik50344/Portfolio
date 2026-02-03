@@ -254,6 +254,30 @@
           "description": "TextField\n\nThe TextField widget is used to take user input such as text, numbers, passwords, or emails. It’s one of the most essential widgets for forms and interactive apps.\n\n\uD83D\uDD39 What does TextField do?\n\n• Allows users to enter text\n• Supports validation and formatting\n• Highly customizable UI and behavior\n\n\uD83D\uDD39 Key properties:\n\n• controller – read/write input value\n• decoration – label, hint, border, icons\n• keyboardType – text, number, email, etc.\n• obscureText – hide input (passwords)\uD83D\uDD39 Common use cases:\n✅ Login & signup forms\n✅ Search bars\n✅ Feedback & comments\n✅ Profile editing\n\n\uD83D\uDCA1 TextField is the foundation of user interaction in Flutter apps.",
           "code": "TextField(\n  decoration: InputDecoration(\n    labelText: \"Username\",\n    border: OutlineInputBorder(),\n  ),\n);",
           "image": "Day 16 - TextField.png"
+        },
+        {
+          "name": "Day 17 - Form",
+          "description": "Form\n\nThe Form widget is used to group multiple input fields together and manage their validation and state in one place. It’s essential for building structured and reliable user input flows.\n\n\uD83D\uDD39 What does Form do?\n\nGroups multiple form fields\nManages validation and saving logic\nWorks seamlessly with TextFormField\nHelps maintain clean and scalable input handling\n\n\uD83D\uDD39 Key properties:\n\nkey – uniquely identifies the form\nchild – contains form fields\nautovalidateMode – controls validation behavior\nonWillPop – handle back navigation logic\uD83D\uDD39 Common use cases:\n✅ Login & signup screens\n✅ Profile editing\n✅ Payment forms\n✅ Feedback & surveys\n\n\uD83D\uDCA1 Form keeps validation logic centralized and your UI clean — a must-have for real-world Flutter apps.",
+          "code": "final _formKey = GlobalKey<FormState>();\n\nForm(\n  key: _formKey,\n  child: Column(\n    children: [\n      TextFormField(\n        validator: (value) =>\n            value!.isEmpty ? 'Required field' : null,\n      ),\n      ElevatedButton(\n        onPressed: () {\n          if (_formKey.currentState!.validate()) {\n            // Submit form\n          }\n        },\n        child: Text('Submit'),\n      ),\n    ],\n  ),\n);",
+          "image": "Day 17 - Form.png"
+        },
+        {
+          "name": "Day 18 - CheckBox",
+          "description": "Checkbox\n\nThe Checkbox widget is used to capture a true / false choice from the user. It’s commonly used for selections, preferences, and confirmations in Flutter apps.\n\n\uD83D\uDD39 What does Checkbox do?\n\n• Lets users toggle between checked and unchecked states\n• Works well with forms and settings screens\n• Supports active, inactive, and disabled states\n\n\uD83D\uDD39 Key properties:\n\n• value – current checked state (true / false)\n• onChanged – callback when value changes\n• activeColor – color when checked\n• checkColor – color of the check mark\uD83D\uDD39 Common use cases:\n✅ Accept terms & conditions\n✅ Settings toggles\n✅ Multi-select lists\n✅ Filters & preferences\n\n\uD83D\uDCA1 Checkbox is ideal when users need clear, simple binary choices.",
+          "code": "bool isChecked = false;\n\nCheckbox(\n  value: isChecked,\n  onChanged: (value) {\n    setState(() {\n      isChecked = value!;\n    });\n  },\n);",
+          "image": "Day 18 - CheckBox.png"
+        },
+        {
+          "name": "Day 19 - Switch",
+          "description": "Switch\n\nThe Switch widget is used to toggle between ON and OFF states. It’s commonly used for settings, preferences, and feature enable/disable options in Flutter apps.\n\n\uD83D\uDD39 What does Switch do?\n\n• Toggles between true and false\n• Provides instant visual feedback\n• Best suited for settings and preferences\n\n\uD83D\uDD39 Key properties:\n\n• value – current state of the switch\n• onChanged – callback when toggled\n• activeColor – thumb color when ON\n• activeTrackColor – track color when ON\uD83D\uDD39 Common use cases:\n✅ App settings\n✅ Dark mode toggle\n✅ Notifications enable/disable\n✅ Feature flags\n\n\uD83D\uDCA1 Switch is perfect when users need to instantly turn a feature ON or OFF.",
+          "code": "bool isEnabled = false;\n\nSwitch(\n  value: isEnabled,\n  onChanged: (value) {\n    setState(() {\n      isEnabled = value;\n    });\n  },\n);",
+          "image": "Day 19 - Switch.png"
+        },
+        {
+          "name": "Day 20 - RadioListTile",
+          "description": "RadioListTile\n\nThe RadioListTile widget is used to select one option from a group of choices. It combines a radio button with text, making selections clear and user-friendly in Flutter apps.\n\n\uD83D\uDD39 What does RadioListTile do?\n\n• Allows selecting only one value at a time\n• Groups related options together\n• Provides clear visual feedback\n\n\uD83D\uDD39 Key properties:\n\n• value – value represented by this radio option\n• groupValue – currently selected value\n• onChanged – callback when selection changes\n• title – main label text\n• subtitle – secondary description (optional)\n• activeColor – color of the selected radio\uD83D\uDD39 Common use cases:\n✅ Settings selection\n✅ Language or theme choice\n✅ Single-choice forms\n✅ Preference screens\n\n\uD83D\uDCA1 RadioListTile is perfect when users must choose exactly one option from multiple choices.",
+          "code": "String selectedOption = 'A';\n\nRadioListTile<String>(\n  value: 'A',\n  groupValue: selectedOption,\n  title: const Text('Option A'),\n  onChanged: (value) {\n    setState(() {\n      selectedOption = value!;\n    });\n  },\n);",
+          "image": "Day 20 - RadioListTile.png"
         }
       ]
     }
