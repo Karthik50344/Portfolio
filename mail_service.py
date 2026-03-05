@@ -23,7 +23,7 @@ def get_email_credentials():
     doc = db.collection("config").document("email_settings").get()
     if doc.exists:
         data = doc.to_dict()
-        return data.get("EMAIL_ADDRESS"), data.get("EMAIL_PASSWORD")
+        return data.get("EMAIL_ADDRESS"), data.get("EMAIL_PASSWORD"), data.get("TO_EMAIL")
     else:
         raise Exception("Email settings not found in Firebase")
 
@@ -35,12 +35,12 @@ def send_email():
     message_body = data.get("message")
 
     try:
-        EMAIL_ADDRESS, EMAIL_PASSWORD = get_email_credentials()
+        EMAIL_ADDRESS, EMAIL_PASSWORD, TO_EMAIL = get_email_credentials()
 
         msg = EmailMessage()
         msg["Subject"] = f"New message from {name}"
         msg["From"] = EMAIL_ADDRESS
-        msg["To"] = EMAIL_ADDRESS
+        msg["To"] = TO_EMAIL
         msg.set_content(f"Name: {name}\nEmail: {sender_email}\n\nMessage:\n{message_body}")
 
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as smtp:
