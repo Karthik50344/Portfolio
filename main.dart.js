@@ -47213,7 +47213,7 @@ OT(a,b,c,d){var s=null,r=A.c4(s,s,A.Z(B.d.ai(127.5),B.i.m()>>>16&255,B.i.m()>>>8
 return A.b37(b,A.aO8(s,new A.hU(4,q,new A.bh(A.Z(p,B.f.m()>>>16&255,B.f.m()>>>8&255,B.f.m()&255),1,B.B,-1)),s,s,s,s,s,s,!0,new A.hU(4,A.bC(8),new A.bh(A.Z(p,B.f.m()>>>16&255,B.f.m()>>>8&255,B.f.m()&255),1,B.B,-1)),s,s,s,s,s,B.aX,!0,s,s,s,s,new A.hU(4,A.bC(8),B.CW),s,s,s,s,s,s,s,s,r,a,s,s,s,s,s,s,s,s,s,!0,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s),c,B.jg,d)},
 OS(a,b,c){return this.OT(a,b,1,c)},
 a8Q(){var s=this,r=t.p
-return A.bP(A.a([B.a_K,B.av,s.EO(B.pv,"karthikeyan08082003@gmail.com"),B.eN,s.EO(B.Jd,"+91 8870392910"),B.eN,s.EO(B.J8,"Tenkasi, TamilNadu, India"),B.bp,A.bL(A.a([s.OQ(B.pw,"Git Hub",new A.awx()),B.fX,s.OQ(B.pv,"Email",new A.awy())],r),B.q,B.o,B.p,0)],r),B.P,B.o,B.p,B.y)},
+return A.bP(A.a([B.a_K,B.av,s.EO(B.pv,"karthik08dev@gmail.com"),B.eN,s.EO(B.Jd,"+91 8870392910"),B.eN,s.EO(B.J8,"Tenkasi, TamilNadu, India"),B.bp,A.bL(A.a([s.OQ(B.pw,"Git Hub",new A.awx()),B.fX,s.OQ(B.pv,"Email",new A.awy())],r),B.q,B.o,B.p,0)],r),B.P,B.o,B.p,B.y)},
 EO(a,b){var s=null
 return A.bL(A.a([A.dy(a,B.f,s,s,20),B.cA,A.bn(b,s,s,s,B.Br,s,s)],t.p),B.q,B.o,B.p,0)},
 OQ(a,b,c){var s=null,r=A.Z(B.d.ai(25.5),B.f.m()>>>16&255,B.f.m()>>>8&255,B.f.m()&255),q=A.bC(20)
@@ -47253,7 +47253,7 @@ $S:127}
 A.awy.prototype={
 $0(){var s=0,r=A.S(t.P),q
 var $async$$0=A.O(function(a,b){if(a===1)return A.P(b,r)
-while(true)switch(s){case 0:q=A.uy(null,"karthikeyan08082003@gmail.com",A.uA(4,"subject=Contact from Portfolio&body=Hi Karthikeyan,",B.a4,!1),null,"mailto")
+while(true)switch(s){case 0:q=A.uy(null,"karthik08dev@gmail.com",A.uA(4,"subject=Contact from Portfolio&body=Hi Karthikeyan,",B.a4,!1),null,"mailto")
 s=4
 return A.T(A.aGq(q),$async$$0)
 case 4:s=b?2:3

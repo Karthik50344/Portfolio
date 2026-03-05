@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Karthikeyan",
-    "email": "karthikeyan08082003@gmail.com",
+    "email": "karthik08dev@gmail.com",
     "phone": "+91 8870392910",
     "location": "Tamil Nadu, India",
     "title": "Flutter Developer",
@@ -28,7 +28,7 @@
       "duration": "2024 - Present",
       "durationInMonths": 24,
       "responsibilities": [
-        "Worked in a team of 5 developers in building cross-platform mobile applications",
+        "Worked in a team of 3 developers in building cross-platform mobile applications",
         "Implemented complex UI designs and animations using Flutter",
         "Integrated Firebase services including Authentication, Firestore, and Cloud Functions",
         "Improved app performance by 40% through code optimization",
@@ -338,6 +338,65 @@
           "description": "Wrap\nThe Wrap widget automatically wraps its children to the next line (or column) when there isn’t enough space. It’s perfect for responsive layouts like tags, chips, or dynamic buttons.\n\n\uD83D\uDD39 What does Wrap do?\n\n• Arranges widgets in horizontal or vertical direction\n• Moves items to next line when space runs out\n• Supports spacing between items\n• Creates responsive UI layouts\n\n\uD83D\uDD39 Key properties:\n\n• direction – horizontal or vertical\n• spacing – space between items\n• runSpacing – space between lines\n• alignment – alignment of children\n• children – list of widgets\n\n\uD83D\uDD39 Common use cases:\n✅ Tag lists\n✅ Category chips\n✅ Dynamic button groups\n✅ Responsive UI sections\n\n\uD83D\uDCA1 Wrap is perfect for building flexible and adaptive layouts in Flutter apps.",
           "code": "Wrap(\n  spacing: 8.0,\n  runSpacing: 8.0,\n  children: [\n    Chip(label: Text(\"Flutter\")),\n    Chip(label: Text(\"Dart\")),\n    Chip(label: Text(\"Wrap\")),\n    Chip(label: Text(\"Responsive\")),\n  ],\n);",
           "image": "Day 30 - Wrap.png"
+        },
+        {
+          "name": "Day 31 - ClipRRect",
+          "description": "ClipRRect\nThe ClipRRect widget clips its child using a rounded rectangle. It’s commonly used to create rounded corners for images, containers, and cards.\n\n\uD83D\uDD39 What does ClipRRect do?\n\n• Clips its child widget\n• Applies rounded corners\n• Supports custom border radius\n• Helps create modern UI designs\n\n\uD83D\uDD39 Key properties:\n\n• borderRadius – defines corner radius\n• child – widget to be clipped\n• clipBehavior – controls clipping behavior\uD83D\uDD39 Common use cases:\n✅ Rounded profile images\n✅ Card UI designs\n✅ Banner images\n✅ Custom shaped containers\n\n\uD83D\uDCA1 ClipRRect is perfect for creating clean, modern rounded UI elements in Flutter apps.",
+          "code": "ClipRRect(\n  borderRadius: BorderRadius.circular(16),\n  child: Image.network(\n    \"https://example.com/image.jpg\",\n    width: 200,\n    height: 200,\n    fit: BoxFit.cover,\n  ),\n);",
+          "image": "Day 31 - ClipRRect.png"
+        },
+        {
+          "name": "Day 32 - Divider",
+          "description": "Divider\nThe Divider widget is a simple horizontal line used to separate content in Flutter apps. It helps improve readability and structure in lists, forms, and layouts.\n\n\uD83D\uDD39 What does Divider do?\n\n• Adds a horizontal separation line\n• Improves visual hierarchy\n• Customizable thickness & color\n• Adds spacing between sections\n\n\uD83D\uDD39 Key properties:\n\n• height – total space occupied by divider\n• thickness – line thickness\n• color – divider color\n• indent – left spacing\n• endIndent – right spacing\uD83D\uDD39 Common use cases:\n✅ Separating ListTiles\n✅ Sectioning forms\n✅ Menu organization\n✅ Improving UI structure\n\n\uD83D\uDCA1 Divider is perfect for creating clean and well-structured layouts in Flutter apps.",
+          "code": "Column(\n  children: [\n    ListTile(title: Text(\"Item 1\")),\n    Divider(\n      height: 20,\n      thickness: 2,\n      color: Colors.grey,\n    ),\n    ListTile(title: Text(\"Item 2\")),\n  ],\n);",
+          "image": "Day 32 - Divider.png"
+        },{
+          "name": "Day 33 - Visibility",
+          "description": "Visibility\nThe Visibility widget controls whether a widget is visible or hidden in the UI. It’s perfect for showing or hiding content dynamically without rebuilding complex layouts.\n\n\uD83D\uDD39 What does Visibility do?\n\n• Shows or hides a widget\n• Replaces hidden widget with another widget\n• Can maintain size, state, and animation\n• Helps build dynamic UI\n\n\uD83D\uDD39 Key properties:\n\n• visible – whether the child is shown\n• child – the widget to display\n• replacement – widget shown when not visible\n• maintainState – keeps widget state when hidden\n• maintainSize – keeps layout space\n• maintainAnimation – keeps animations running\uD83D\uDD39 Common use cases:\n✅ Conditional UI rendering\n✅ Showing error messages\n✅ Toggle password visibility\n✅ Feature flag handling\n✅ Role-based content display\n\n\uD83D\uDCA1 Visibility is perfect for dynamically controlling parts of your UI in Flutter apps.",
+          "code": "Visibility(\n  visible: isVisible,\n  replacement: Text(\"Hidden Content\"),\n  child: Container(\n    padding: EdgeInsets.all(16),\n    color: Colors.blue,\n    child: Text(\"Now you see me!\"),\n  ),\n);",
+          "image": "Day 33 - Visibility.png"
+        },
+        {
+          "name": "Day 34 - Hero",
+          "description": "Hero\nThe Hero widget creates smooth shared-element transitions between two screens. It animates a widget from one route to another, making navigation feel seamless and professional.\n\n\uD83D\uDD39 What does Hero do?\n\n• Creates shared element transitions\n• Animates widgets between screens\n• Improves navigation experience\n• Adds smooth visual continuity\n\n\uD83D\uDD39 Key properties:\n\n• tag – unique identifier to link two Hero widgets\n• child – the widget to animate\n• flightShuttleBuilder – custom transition animation\n• placeholderBuilder – widget shown during animation\n• transitionOnUserGestures – enables gesture-based transitions\uD83D\uDD39 Common use cases:\n✅ Image gallery transitions\n✅ Profile picture expansion\n✅ Product detail animations\n✅ Card-to-detail screen transitions\n✅ Smooth page navigation\n\n\uD83D\uDCA1 Hero is perfect for creating beautiful, fluid transitions that elevate your Flutter app’s user experience.",
+          "code": "// First Screen\nHero(\n  tag: \"profileImage\",\n  child: CircleAvatar(\n    radius: 40,\n    backgroundImage: AssetImage(\"assets/profile.jpg\"),\n  ),\n);\n\n// Second Screen\nHero(\n  tag: \"profileImage\",\n  child: CircleAvatar(\n    radius: 120,\n    backgroundImage: AssetImage(\"assets/profile.jpg\"),\n  ),\n);",
+          "image": "Day 34 - Hero.png"
+        },
+        {
+          "name": "Day 35 - ListTile",
+          "description": "ListTile\nThe ListTile widget is a single fixed-height row that typically contains text and optional leading/trailing widgets. It’s commonly used in lists, settings screens, menus, and navigation drawers.\n\n\uD83D\uDD39 What does ListTile do?\n\n• Displays structured row content\n• Supports leading & trailing widgets\n• Handles tap interactions\n• Works perfectly inside ListView\n\n\uD83D\uDD39 Key properties:\n\n• leading – widget before the title (icon/avatar)\n• title – primary text\n• subtitle – secondary text below title\n• trailing – widget after the title (icon/switch)\n• onTap – callback when tapped\n• selected – highlights the tile\uD83D\uDD39 Common use cases:\n✅ Settings screens\n✅ Navigation drawers\n✅ Contact lists\n✅ Chat previews\n✅ Profile menus\n\n\uD83D\uDCA1 ListTile helps you build clean, consistent list-based UIs quickly in Flutter.",
+          "code": "ListTile(\n  leading: Icon(Icons.person),\n  title: Text(\"John Doe\"),\n  subtitle: Text(\"Flutter Developer\"),\n  trailing: Icon(Icons.arrow_forward_ios),\n  onTap: () {\n    print(\"Tile tapped\");\n  },\n);",
+          "image": "Day 35 - ListTile.png"
+        },
+        {
+          "name": "Day 36 - RichText",
+          "description": "RichText\nThe RichText widget allows you to display text with multiple styles in a single line or paragraph. It gives you full control over text formatting using TextSpan.\n\n\uD83D\uDD39 What does RichText do?\n\n• Displays multi-styled text\n• Combines different colors, sizes & weights\n• Supports inline styling\n• Enables clickable text spans\n\n\uD83D\uDD39 Key properties:\n\n• text – the TextSpan tree\n• TextSpan – styled text segment\n• style – default text style\n• children – nested TextSpans\n• recognizer – handles tap gestures\uD83D\uDD39 Common use cases:\n✅ Highlighting keywords\n✅ Terms & Conditions links\n✅ Mixed text formatting\n✅ Inline clickable text\n✅ Styled chat messages\n\n\uD83D\uDCA1 RichText is perfect when you need advanced text styling beyond a simple Text widget.",
+          "code": "RichText(\n  text: TextSpan(\n    style: TextStyle(color: Colors.black, fontSize: 16),\n    children: [\n      TextSpan(text: \"Hello \"),\n      TextSpan(\n        text: \"Flutter\",\n        style: TextStyle(\n          fontWeight: FontWeight.bold,\n          color: Colors.blue,\n        ),\n      ),\n      TextSpan(text: \" Developer!\"),\n    ],\n  ),\n);",
+          "image": "Day 36 - RichText.png"
+        },
+        {
+          "name": "Day 37 - DropdownButton",
+          "description": "DropdownButton\nThe DropdownButton widget allows users to select one value from a list of options. It displays the currently selected item and shows a dropdown menu when tapped.\n\n\uD83D\uDD39 What does DropdownButton do?\n\n• Displays a list of selectable items\n• Shows selected value\n• Expands into a dropdown menu\n• Handles selection changes\n\n\uD83D\uDD39 Key properties:\n\n• items – list of DropdownMenuItem widgets\n• value – currently selected value\n• onChanged – callback when selection changes\n• hint – placeholder when no value selected\n• icon – custom dropdown icon\n• isExpanded – makes dropdown full width\uD83D\uDD39 Common use cases:\n\n✅ Selecting categories\n✅ Choosing country/language\n✅ Filter options\n✅ Form inputs\n✅ Settings selection\n\n\uD83D\uDCA1 DropdownButton is perfect when you need a compact and user-friendly way to choose one option from multiple choices.",
+          "code": "String selectedValue = \"One\";\n\nDropdownButton<String>(\n  value: selectedValue,\n  items: [\"One\", \"Two\", \"Three\"]\n      .map(\n        (item) => DropdownMenuItem<String>(\n          value: item,\n          child: Text(item),\n        ),\n      )\n      .toList(),\n  onChanged: (value) {\n    setState(() {\n      selectedValue = value!;\n    });\n  },\n);",
+          "image": "Day 37 - DropdownButton.png"
+        },
+        {
+          "name": "Day 38 - DatePicker",
+          "description": "DatePicker\nThe DatePicker in Flutter allows users to select a date using a material design calendar dialog. It is commonly used in forms, booking apps, and profile details.\n\n\uD83D\uDD39 What does DatePicker do?\n\n• Opens a calendar dialog\n• Allows single date selection\n• Supports date range limits\n• Returns selected date\n\n\uD83D\uDD39 Key parameters (showDatePicker):\n\n• context – build context\n• initialDate – default selected date\n• firstDate – earliest selectable date\n• lastDate – latest selectable date\n• onDatePickerModeChange – optional mode listener\n• builder – customize theme\n\n\uD83D\uDD39 Common use cases:\n\n✅ Booking systems\n✅ Date of birth selection\n✅ Event scheduling\n✅ Form inputs\n✅ Reminders & planners\n\n\uD83D\uDCA1 DatePicker is perfect when you need a clean and user-friendly way to select dates in your Flutter app.",
+          "code": "DateTime? selectedDate;\n\nFuture<void> pickDate(BuildContext context) async {\n  final DateTime? picked = await showDatePicker(\n    context: context,\n    initialDate: DateTime.now(),\n    firstDate: DateTime(2000),\n    lastDate: DateTime(2100),\n  );\n\n  if (picked != null) {\n    setState(() {\n      selectedDate = picked;\n    });\n  }\n}",
+          "image": "Day 38 - DatePicker.png"
+        },
+        {
+          "name": "Day 39 - TimePicker",
+          "description": "TimePicker\nThe TimePicker in Flutter allows users to select a time using a material design clock dialog. It is commonly used in scheduling apps, reminders, alarms, and booking systems.\n\n\uD83D\uDD39 What does TimePicker do?\n\n• Opens a clock-style dialog\n• Allows hour & minute selection\n• Supports 12h & 24h formats\n• Returns selected time\n\n\uD83D\uDD39 Key parameters (showTimePicker):\n\n• context – build context\n• initialTime – default selected time\n• builder – customize theme\n• helpText – dialog title text\n• confirmText – confirm button text\n• cancelText – cancel button text\uD83D\uDD39 Common use cases:\n\n✅ Alarm & reminder apps\n✅ Meeting scheduling\n✅ Booking time slots\n✅ Delivery time selection\n✅ Event planning\n\n\uD83D\uDCA1 TimePicker is perfect when you need a clean and user-friendly way to select time in your Flutter app.",
+          "code": "TimeOfDay? selectedTime;\n\nFuture<void> pickTime(BuildContext context) async {\n  final TimeOfDay? picked = await showTimePicker(\n    context: context,\n    initialTime: TimeOfDay.now(),\n  );\n\n  if (picked != null) {\n    setState(() {\n      selectedTime = picked;\n    });\n  }\n}\n",
+          "image": "Day 39 - TimePicker.png"
+        },
+        {
+          "name": "Day 40 - Progress Indicator",
+          "description": "Progress Indicator\nThe Progress Indicator in Flutter is used to show the progress of an ongoing task such as loading data, downloading files, or processing actions.\n\nFlutter provides two main types:\n• LinearProgressIndicator\n• CircularProgressIndicator\n\n\uD83D\uDD39 What does Progress Indicator do?\n\n• Shows loading state\n• Indicates task completion progress\n• Improves user experience\n• Prevents user confusion during async tasks\n\n\uD83D\uDD39 Key properties:\n\n• value – progress value (0.0 to 1.0)\n• backgroundColor – track color\n• color – progress color\n• strokeWidth – thickness (circular)\n• minHeight – height (linear)\uD83D\uDD39 Common use cases:\n\n✅ API loading\n✅ File uploads/downloads\n✅ Form submission\n✅ Authentication process\n✅ Background processing\n\n\uD83D\uDCA1 ProgressIndicator is perfect when you need to visually communicate loading or task completion status in your Flutter app.",
+          "code": "CircularProgressIndicator(\n  value: 0.7, // 70% completed\n  strokeWidth: 6,\n);\nLinearProgressIndicator(\n  value: 0.5, // 50% completed\n  minHeight: 6,\n);",
+          "image": "Day 40 - Progress Indicator.png"
         }
       ]
     }
