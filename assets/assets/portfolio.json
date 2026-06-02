@@ -4,12 +4,14 @@
     "email": "karthik08dev@gmail.com",
     "phone": "+91 8870392910",
     "location": "Tamil Nadu, India",
-    "title": "Flutter Developer",
-    "summary": "Experienced mobile developer with 2+ years of expertise in Flutter, Dart, and cross-platform app development. Passionate about creating beautiful and performant mobile applications."
+    "title": "Software Developer",
+    "summary": "Experienced mobile developer with 2+ years of expertise in Flutter, Dart, Python, FastAPI and cross-platform app development. Passionate about creating beautiful and performant mobile applications."
   },
   "skills": [
     "Flutter",
     "Dart",
+    "Python",
+    "FastAPI",
     "Firebase",
     "REST API",
     "State Management (Bloc)",
@@ -19,6 +21,7 @@
     "iOS Development",
     "Android Development",
     "Mobile Development",
+    "Full Stack Development",
     "Agile/Scrum"
   ],
   "experience": [
@@ -85,6 +88,18 @@
         "NihonGo(9).jpg",
         "NihonGo(10).jpg"
       ]
+    },
+    {
+      "name": "Gems Bill (Billing Software)",
+      "description": "Developed a full-stack billing and inventory management application for a jewelry business, featuring invoice generation, advance booking management, customer records, and real-time data synchronization.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Python", "FastAPI"],
+      "images": []
+    },
+    {
+      "name": "SP Food Corps (Billing Software)",
+      "description": "Built a full-stack billing and customer management system for a catering service, including master data management, customer tracking, invoice generation, and reporting functionalities.",
+      "technologies": ["Flutter", "Firebase", "Dart", "Python", "FastAPI"],
+      "images": []
     }
   ],
   "education": [
